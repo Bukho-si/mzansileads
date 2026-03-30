@@ -57,7 +57,7 @@ export default function ProspectingPage() {
               value={businessName}
               onChange={(e) => setBusinessName(e.target.value)}
               placeholder="e.g. Mzansi Digital Solutions"
-              className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-blue-500 outline-none transition-all shadow-sm"
+              className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-blue-500 outline-none transition-all shadow-sm text-black"
             />
           </div>
 
@@ -69,7 +69,7 @@ export default function ProspectingPage() {
               value={website}
               onChange={(e) => setWebsite(e.target.value)}
               placeholder="e.g. mzansidigital.co.za"
-              className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-blue-500 outline-none transition-all shadow-sm"
+              className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-blue-500 outline-none transition-all shadow-sm text-black"
             />
           </div>
 
@@ -80,7 +80,7 @@ export default function ProspectingPage() {
               value={niche}
               onChange={(e) => setNiche(e.target.value)}
               placeholder="e.g. Plumbing"
-              className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-blue-500 outline-none transition-all shadow-sm"
+              className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-blue-500 outline-none transition-all shadow-sm text-black"
             />
           </div>
 
