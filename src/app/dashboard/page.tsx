@@ -12,11 +12,11 @@ export default function DashboardPage() {
     async function loadMetrics() {
       try {
         const { count: tCount } = await supabase
-          .from('leads')
+          .from('mzansi_leads')
           .select('*', { count: 'exact', head: true });
 
         const { count: aCount } = await supabase
-          .from('leads')
+          .from('mzansi_leads')
           .select('*', { count: 'exact', head: true })
           .eq('status', 'analyzed');
 

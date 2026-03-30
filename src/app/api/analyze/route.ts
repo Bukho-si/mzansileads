@@ -64,7 +64,7 @@ export async function POST(req: Request) {
     try {
       if (id && process.env.SUPABASE_SERVICE_ROLE_KEY) {
         await supabaseAdmin
-          .from("leads")
+          .from("mzansi_leads")
           .update({ 
             status: "analyzed",
             audit_json: finalReport

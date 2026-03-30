@@ -37,14 +37,14 @@ function AuditContent() {
       if (!leadId) return;
       
       const { data, error } = await supabase
-        .from('leads')
+        .from('mzansi_leads')
         .select('*')
         .eq('id', leadId)
         .single();
         
       if (data) {
         setBusiness(data.business_name || "");
-        setWebsite(data.website || "");
+        setWebsite(data.website_url || "");
         if (data.audit_json) {
            // If it was already analyzed, we could show it, but the PRD says "run audit"
         }

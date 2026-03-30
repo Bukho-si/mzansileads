@@ -25,8 +25,8 @@ export default function ProspectingPage() {
 
     try {
       const { data, error } = await supabase
-        .from('leads')
-        .insert([{ business_name: businessName, website, niche, status: 'captured' }])
+        .from('mzansi_leads')
+        .insert([{ business_name: businessName, website_url: website, niche, status: 'captured' }])
         .select()
         .single();
 
